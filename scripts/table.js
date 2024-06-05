@@ -26,7 +26,9 @@ function flatten(data) {
   return results;
 }
 
-function displayData(data, metric, metricName) {
+async function displayData(data, metric, metricName) {
+  const models = await fetch("models.json").then((resp) => resp.json());
+
   const flattened = flatten(data);
   [...document.querySelectorAll("[data-metric]")].forEach(
     (el) => (el.innerHTML = metricName)
@@ -49,9 +51,15 @@ function displayData(data, metric, metricName) {
 
       for (const col of ["model", metric, ...cols]) {
         const td = document.createElement("td");
-        td.textContent = row[col];
-        if (typeof row[col] === "number") {
-          td.textContent = (row[col] * 100).toFixed(1);
+        if (col === "model") {
+          const anchor = document.createElement("a");
+          anchor.href = models.find((m) => m.model === row.model).link;
+          anchor.innerHTML = row.model;
+          td.appendChild(anchor);
+        } else if (typeof row[col] === "number") {
+          td.innerHTML = (row[col] * 100).toFixed(1);
+        } else {
+          td.innerHTML = row[col];
         }
         tr.appendChild(td);
       }

@@ -1,0 +1,22 @@
+[
+  {
+    "model": "gpt-3.5-turbo-1106",
+    "link": "https://openai.com/"
+  },
+  {
+    "model": "deepseek-coder-33b-instruct",
+    "link": "https://huggingface.co/deepseek-ai/deepseek-coder-33b-instruct"
+  },
+  {
+    "model": "deepseek-coder-6.7b-instruct",
+    "link": "https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-instruct"
+  },
+  {
+    "model": "Phind-CodeLlama-34B-v2",
+    "link": "https://huggingface.co/Phind/Phind-CodeLlama-34B-v2"
+  },
+  {
+    "model": "WizardCoder-15B-V1.0",
+    "link": "https://huggingface.co/WizardLMTeam/WizardCoder-15B-V1.0"
+  }
+]
