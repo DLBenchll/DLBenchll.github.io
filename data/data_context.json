@@ -1,0 +1,462 @@
+{
+  "completion": [
+    {
+      "Context": "maximum",
+      "Method": "holistic",
+      "Model": "deepseek-coder-33b-instruct",
+      "Pass_at_1": 0.9714285714
+    },
+    {
+      "Context": "maximum",
+      "Method": "holistic",
+      "Model": "deepseek-coder-6.7b-instruct",
+      "Pass_at_1": 0.945
+    },
+    {
+      "Context": "selective",
+      "Method": "holistic",
+      "Model": "deepseek-coder-6.7b-instruct",
+      "Pass_at_1": 0.9378571429
+    },
+    {
+      "Context": "selective",
+      "Method": "holistic",
+      "Model": "deepseek-coder-33b-instruct",
+      "Pass_at_1": 0.9357142857
+    },
+    {
+      "Context": "maximum",
+      "Method": "holistic",
+      "Model": "gpt-3.5-turbo-1106",
+      "Pass_at_1": 0.9328571429
+    },
+    {
+      "Context": "selective",
+      "Method": "holistic",
+      "Model": "gpt-3.5-turbo-1106",
+      "Pass_at_1": 0.9214285714
+    },
+    {
+      "Context": "minimum",
+      "Method": "holistic",
+      "Model": "deepseek-coder-6.7b-instruct",
+      "Pass_at_1": 0.9007142857
+    },
+    {
+      "Context": "maximum",
+      "Method": "holistic",
+      "Model": "Phind-CodeLlama-34B-v2",
+      "Pass_at_1": 0.8907142857
+    },
+    {
+      "Context": "minimum",
+      "Method": "holistic",
+      "Model": "deepseek-coder-33b-instruct",
+      "Pass_at_1": 0.8828571429
+    },
+    {
+      "Context": "minimum",
+      "Method": "holistic",
+      "Model": "Phind-CodeLlama-34B-v2",
+      "Pass_at_1": 0.8728571429
+    },
+    {
+      "Context": "minimum",
+      "Method": "holistic",
+      "Model": "gpt-3.5-turbo-1106",
+      "Pass_at_1": 0.8578571429
+    },
+    {
+      "Context": "selective",
+      "Method": "holistic",
+      "Model": "Phind-CodeLlama-34B-v2",
+      "Pass_at_1": 0.845
+    },
+    {
+      "Context": "selective",
+      "Method": "holistic",
+      "Model": "WizardCoder-15B-V1.0",
+      "Pass_at_1": 0.7964285714
+    },
+    {
+      "Context": "minimum",
+      "Method": "holistic",
+      "Model": "WizardCoder-15B-V1.0",
+      "Pass_at_1": 0.7935714286
+    },
+    {
+      "Context": "maximum",
+      "Method": "holistic",
+      "Model": "WizardCoder-15B-V1.0",
+      "Pass_at_1": 0.7192857143
+    }
+  ],
+  "compilation_class_wise": [
+    {
+      "Context": "selective",
+      "Method": "holistic",
+      "Model": "gpt-3.5-turbo-1106",
+      "Pass_at_1": 0.7942857143
+    },
+    {
+      "Context": "selective",
+      "Method": "holistic",
+      "Model": "deepseek-coder-33b-instruct",
+      "Pass_at_1": 0.7414285714
+    },
+    {
+      "Context": "maximum",
+      "Method": "holistic",
+      "Model": "deepseek-coder-6.7b-instruct",
+      "Pass_at_1": 0.7385714286
+    },
+    {
+      "Context": "maximum",
+      "Method": "holistic",
+      "Model": "deepseek-coder-33b-instruct",
+      "Pass_at_1": 0.7314285714
+    },
+    {
+      "Context": "selective",
+      "Method": "holistic",
+      "Model": "deepseek-coder-6.7b-instruct",
+      "Pass_at_1": 0.7171428571
+    },
+    {
+      "Context": "selective",
+      "Method": "holistic",
+      "Model": "Phind-CodeLlama-34B-v2",
+      "Pass_at_1": 0.6978571429
+    },
+    {
+      "Context": "maximum",
+      "Method": "holistic",
+      "Model": "gpt-3.5-turbo-1106",
+      "Pass_at_1": 0.6592857143
+    },
+    {
+      "Context": "maximum",
+      "Method": "holistic",
+      "Model": "Phind-CodeLlama-34B-v2",
+      "Pass_at_1": 0.6414285714
+    },
+    {
+      "Context": "selective",
+      "Method": "holistic",
+      "Model": "WizardCoder-15B-V1.0",
+      "Pass_at_1": 0.58
+    },
+    {
+      "Context": "maximum",
+      "Method": "holistic",
+      "Model": "WizardCoder-15B-V1.0",
+      "Pass_at_1": 0.4814285714
+    },
+    {
+      "Context": "minimum",
+      "Method": "holistic",
+      "Model": "gpt-3.5-turbo-1106",
+      "Pass_at_1": 0.45
+    },
+    {
+      "Context": "minimum",
+      "Method": "holistic",
+      "Model": "Phind-CodeLlama-34B-v2",
+      "Pass_at_1": 0.39
+    },
+    {
+      "Context": "minimum",
+      "Method": "holistic",
+      "Model": "deepseek-coder-6.7b-instruct",
+      "Pass_at_1": 0.3692857143
+    },
+    {
+      "Context": "minimum",
+      "Method": "holistic",
+      "Model": "deepseek-coder-33b-instruct",
+      "Pass_at_1": 0.3457142857
+    },
+    {
+      "Context": "minimum",
+      "Method": "holistic",
+      "Model": "WizardCoder-15B-V1.0",
+      "Pass_at_1": 0.215
+    }
+  ],
+  "compilation_test_wise": [
+    {
+      "Context": "selective",
+      "Method": "holistic",
+      "Model": "deepseek-coder-33b-instruct",
+      "Pass_at_1": 0.4202826585
+    },
+    {
+      "Context": "selective",
+      "Method": "holistic",
+      "Model": "gpt-3.5-turbo-1106",
+      "Pass_at_1": 0.3443277311
+    },
+    {
+      "Context": "maximum",
+      "Method": "holistic",
+      "Model": "deepseek-coder-33b-instruct",
+      "Pass_at_1": 0.3405987395
+    },
+    {
+      "Context": "maximum",
+      "Method": "holistic",
+      "Model": "deepseek-coder-6.7b-instruct",
+      "Pass_at_1": 0.3387079832
+    },
+    {
+      "Context": "selective",
+      "Method": "holistic",
+      "Model": "Phind-CodeLlama-34B-v2",
+      "Pass_at_1": 0.3183823529
+    },
+    {
+      "Context": "selective",
+      "Method": "holistic",
+      "Model": "deepseek-coder-6.7b-instruct",
+      "Pass_at_1": 0.3121848739
+    },
+    {
+      "Context": "maximum",
+      "Method": "holistic",
+      "Model": "gpt-3.5-turbo-1106",
+      "Pass_at_1": 0.2858193277
+    },
+    {
+      "Context": "maximum",
+      "Method": "holistic",
+      "Model": "Phind-CodeLlama-34B-v2",
+      "Pass_at_1": 0.2283088235
+    },
+    {
+      "Context": "selective",
+      "Method": "holistic",
+      "Model": "WizardCoder-15B-V1.0",
+      "Pass_at_1": 0.2240546218
+    },
+    {
+      "Context": "maximum",
+      "Method": "holistic",
+      "Model": "WizardCoder-15B-V1.0",
+      "Pass_at_1": 0.1466911765
+    },
+    {
+      "Context": "minimum",
+      "Method": "holistic",
+      "Model": "deepseek-coder-33b-instruct",
+      "Pass_at_1": 0.1128676471
+    },
+    {
+      "Context": "minimum",
+      "Method": "holistic",
+      "Model": "gpt-3.5-turbo-1106",
+      "Pass_at_1": 0.03125
+    },
+    {
+      "Context": "minimum",
+      "Method": "holistic",
+      "Model": "WizardCoder-15B-V1.0",
+      "Pass_at_1": 0.0147058824
+    },
+    {
+      "Context": "minimum",
+      "Method": "holistic",
+      "Model": "deepseek-coder-6.7b-instruct",
+      "Pass_at_1": 0.0125
+    },
+    {
+      "Context": "minimum",
+      "Method": "holistic",
+      "Model": "Phind-CodeLlama-34B-v2",
+      "Pass_at_1": 0.0
+    }
+  ],
+  "pass_class_wise": [
+    {
+      "Context": "selective",
+      "Method": "holistic",
+      "Model": "gpt-3.5-turbo-1106",
+      "Pass_at_1": 0.7832360347
+    },
+    {
+      "Context": "selective",
+      "Method": "holistic",
+      "Model": "deepseek-coder-33b-instruct",
+      "Pass_at_1": 0.723699056
+    },
+    {
+      "Context": "maximum",
+      "Method": "holistic",
+      "Model": "deepseek-coder-33b-instruct",
+      "Pass_at_1": 0.715291943
+    },
+    {
+      "Context": "maximum",
+      "Method": "holistic",
+      "Model": "deepseek-coder-6.7b-instruct",
+      "Pass_at_1": 0.7033228696
+    },
+    {
+      "Context": "selective",
+      "Method": "holistic",
+      "Model": "deepseek-coder-6.7b-instruct",
+      "Pass_at_1": 0.6855203826
+    },
+    {
+      "Context": "selective",
+      "Method": "holistic",
+      "Model": "Phind-CodeLlama-34B-v2",
+      "Pass_at_1": 0.6808480861
+    },
+    {
+      "Context": "maximum",
+      "Method": "holistic",
+      "Model": "gpt-3.5-turbo-1106",
+      "Pass_at_1": 0.6417690022
+    },
+    {
+      "Context": "maximum",
+      "Method": "holistic",
+      "Model": "Phind-CodeLlama-34B-v2",
+      "Pass_at_1": 0.6293667264
+    },
+    {
+      "Context": "selective",
+      "Method": "holistic",
+      "Model": "WizardCoder-15B-V1.0",
+      "Pass_at_1": 0.5674101922
+    },
+    {
+      "Context": "maximum",
+      "Method": "holistic",
+      "Model": "WizardCoder-15B-V1.0",
+      "Pass_at_1": 0.4741970721
+    },
+    {
+      "Context": "minimum",
+      "Method": "holistic",
+      "Model": "gpt-3.5-turbo-1106",
+      "Pass_at_1": 0.4489821662
+    },
+    {
+      "Context": "minimum",
+      "Method": "holistic",
+      "Model": "Phind-CodeLlama-34B-v2",
+      "Pass_at_1": 0.3864123669
+    },
+    {
+      "Context": "minimum",
+      "Method": "holistic",
+      "Model": "deepseek-coder-6.7b-instruct",
+      "Pass_at_1": 0.3599216366
+    },
+    {
+      "Context": "minimum",
+      "Method": "holistic",
+      "Model": "deepseek-coder-33b-instruct",
+      "Pass_at_1": 0.3272885064
+    },
+    {
+      "Context": "minimum",
+      "Method": "holistic",
+      "Model": "WizardCoder-15B-V1.0",
+      "Pass_at_1": 0.2139054163
+    }
+  ],
+  "pass_test_wise": [
+    {
+      "Context": "selective",
+      "Method": "holistic",
+      "Model": "deepseek-coder-33b-instruct",
+      "Pass_at_1": 0.3047552867
+    },
+    {
+      "Context": "maximum",
+      "Method": "holistic",
+      "Model": "deepseek-coder-33b-instruct",
+      "Pass_at_1": 0.3032497787
+    },
+    {
+      "Context": "selective",
+      "Method": "holistic",
+      "Model": "gpt-3.5-turbo-1106",
+      "Pass_at_1": 0.2941156144
+    },
+    {
+      "Context": "selective",
+      "Method": "holistic",
+      "Model": "Phind-CodeLlama-34B-v2",
+      "Pass_at_1": 0.2544265255
+    },
+    {
+      "Context": "maximum",
+      "Method": "holistic",
+      "Model": "gpt-3.5-turbo-1106",
+      "Pass_at_1": 0.2393000344
+    },
+    {
+      "Context": "selective",
+      "Method": "holistic",
+      "Model": "deepseek-coder-6.7b-instruct",
+      "Pass_at_1": 0.2028454735
+    },
+    {
+      "Context": "maximum",
+      "Method": "holistic",
+      "Model": "Phind-CodeLlama-34B-v2",
+      "Pass_at_1": 0.1966660863
+    },
+    {
+      "Context": "maximum",
+      "Method": "holistic",
+      "Model": "deepseek-coder-6.7b-instruct",
+      "Pass_at_1": 0.1877858469
+    },
+    {
+      "Context": "selective",
+      "Method": "holistic",
+      "Model": "WizardCoder-15B-V1.0",
+      "Pass_at_1": 0.1669267449
+    },
+    {
+      "Context": "maximum",
+      "Method": "holistic",
+      "Model": "WizardCoder-15B-V1.0",
+      "Pass_at_1": 0.1370849195
+    },
+    {
+      "Context": "minimum",
+      "Method": "holistic",
+      "Model": "deepseek-coder-33b-instruct",
+      "Pass_at_1": 0.1123372221
+    },
+    {
+      "Context": "minimum",
+      "Method": "holistic",
+      "Model": "gpt-3.5-turbo-1106",
+      "Pass_at_1": 0.03125
+    },
+    {
+      "Context": "minimum",
+      "Method": "holistic",
+      "Model": "WizardCoder-15B-V1.0",
+      "Pass_at_1": 0.0147058824
+    },
+    {
+      "Context": "minimum",
+      "Method": "holistic",
+      "Model": "deepseek-coder-6.7b-instruct",
+      "Pass_at_1": 0.0125
+    },
+    {
+      "Context": "minimum",
+      "Method": "holistic",
+      "Model": "Phind-CodeLlama-34B-v2",
+      "Pass_at_1": 0.0
+    }
+  ]
+}

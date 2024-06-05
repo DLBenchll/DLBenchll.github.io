@@ -100,8 +100,8 @@
       <h1 class="text-nowrap mt-5">☕︎ JavaEval Leaderboard ☕️</h1>
       <h3 class="fw-light text-nowrap">
         <small id="warning"
-          >EvalPlus evaluates AI Coders with rigorous tests.<br
-        /></small>
+          >A Benchmark of Object-Oriented Code Generation for
+          Evaluating Large Language Models</small>
       </h3>
       <div class="d-flex flex-row justify-content-center gap-3">
         <a href="https://github.com/JavaEval/JavaEval"
@@ -117,37 +117,60 @@
             class="img-fluid"
         /></a> -->
       </div>
-      <div class="btn-group" role="group" id="Benchmark">
+      <div class="btn-group" role="group" id="Metrics">
         <input
           type="radio"
           class="btn-check"
           name="btnradio"
-          id="HumanEval"
+          id="method"
           checked
         />
-        <label class="btn btn-outline-primary" for="HumanEval">HumanEval</label>
-        <input type="radio" class="btn-check" name="btnradio" id="MBPP" />
-        <label class="btn btn-outline-primary" for="MBPP">MBPP</label>
-        <input type="radio" class="btn-check" name="btnradio" id="Average" />
-        <label class="btn btn-outline-primary" for="Average">Average</label>
+        <label class="btn btn-outline-primary" for="method">Method</label>
+        <input type="radio" class="btn-check" name="btnradio" id="context" />
+        <label class="btn btn-outline-primary" for="context">Context</label>
+        <input type="radio" class="btn-check" name="btnradio" id="incr-order" />
+        <label class="btn btn-outline-primary" for="incr-order">Incremental</label>
       </div>
       <div id="chart" style="width: 100%; height: 600px"></div>
       <div class="container-fluid d-flex flex-row flex-nowrap">
         <div class="container-fluid d-flex flex-column align-items-center">
-          <label for="plused" class="text-success mb-3"
-            >⚡EvalPlus Tests⚡</label
+          <label for="class-wise" class="text-success mb-3"
+            >Class-wise</label
           >
           <table
-            id="plused"
+            id="class-wise"
             class="table table-responsive table-striped table-bordered flex-shrink-1 border border-success border-3"
-          ></table>
+          >
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Model</th>
+                <th data-metric></th>
+                <th>Completion</th>
+                <th>Compilation</th>
+                <th>Pass</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
         </div>
         <div class="container-fluid d-flex flex-column align-items-center">
-          <label for="origin" class="text-danger mb-3">Base Tests</label>
+          <label for="test-wise" class="text-danger mb-3">Test-wise</label>
           <table
-            id="origin"
+            id="test-wise"
             class="table table-responsive table-striped table-bordered flex-shrink-1 border border-danger border-3"
-          ></table>
+          >
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Model</th>
+                <th data-metric></th>
+                <th>Compilation</th>
+                <th>Pass</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
         </div>
       </div>
       <!-- <div id="notes">
