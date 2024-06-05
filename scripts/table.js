@@ -8,12 +8,13 @@ async function displayData(data, metric, metricName) {
     (el) => (el.innerHTML = metricName)
   );
 
-  function display(el, cols) {
-    flattened.sort(
-      (a, b) =>
-        cols.reduce((acc, key) => acc + b[key], 0) -
-        cols.reduce((acc, key) => acc + a[key], 0)
-    );
+  function display(el, cols, sort_key) {
+    // flattened.sort(
+    //   (a, b) =>
+    //     cols.reduce((acc, key) => acc + b[key], 0) -
+    //     cols.reduce((acc, key) => acc + a[key], 0)
+    // );
+    flattened.sort((a, b) => b[sort_key] - a[sort_key]);
 
     const tbody = el.querySelector("tbody");
     tbody.innerHTML = "";
@@ -39,12 +40,16 @@ async function displayData(data, metric, metricName) {
     }
   }
 
-  display(tableClass, [
-    "completion",
-    "compilation_class_wise",
-    "pass_class_wise",
-  ]);
-  display(tableTest, ["compilation_test_wise", "pass_test_wise"]);
+  display(
+    tableClass,
+    ["completion", "compilation_class_wise", "pass_class_wise"],
+    "pass_class_wise"
+  );
+  display(
+    tableTest,
+    ["compilation_test_wise", "pass_test_wise"],
+    "pass_test_wise"
+  );
 }
 
 btnMethod.addEventListener("click", () => {
