@@ -124,3 +124,7 @@ fetch("data/data_method.json")
   .then((data) => {
     displayData(data, "method");
   });
+
+window.addEventListener("resize", () => {
+  chart.resize();
+});
