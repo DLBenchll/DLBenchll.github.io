@@ -1,34 +1,8 @@
 const tableClass = document.getElementById("class-wise");
 const tableTest = document.getElementById("test-wise");
 
-function flatten(data) {
-  const results = [];
-  for (const [key, value] of Object.entries(data)) {
-    for (const row of value) {
-      const {
-        Context: context,
-        Method: method,
-        Model: model,
-        Pass_at_1: score,
-      } = row;
-
-      let result = results.find(
-        (r) => r.context === context && r.method === method && r.model === model
-      );
-      if (!result) {
-        result = { context, method, model };
-        results.push(result);
-      }
-
-      result[key] = score;
-    }
-  }
-  return results;
-}
-
 async function displayData(data, metric, metricName) {
   const models = await fetch("models.json").then((resp) => resp.json());
-
   const flattened = flatten(data);
   [...document.querySelectorAll("[data-metric]")].forEach(
     (el) => (el.innerHTML = metricName)
@@ -56,8 +30,6 @@ async function displayData(data, metric, metricName) {
           anchor.href = models.find((m) => m.model === row.model).link;
           anchor.innerHTML = row.model;
           td.appendChild(anchor);
-        } else if (typeof row[col] === "number") {
-          td.innerHTML = (row[col] * 100).toFixed(1);
         } else {
           td.innerHTML = row[col];
         }
@@ -74,10 +46,6 @@ async function displayData(data, metric, metricName) {
   ]);
   display(tableTest, ["compilation_test_wise", "pass_test_wise"]);
 }
-
-const btnMethod = document.getElementById("method");
-const btnContext = document.getElementById("context");
-const btnIncrOrder = document.getElementById("incr-order");
 
 btnMethod.addEventListener("click", () => {
   fetch("data/data_method.json")
