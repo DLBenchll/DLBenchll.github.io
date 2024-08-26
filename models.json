@@ -4,6 +4,10 @@
     "link": "https://openai.com/"
   },
   {
+    "model": "gpt-4o-2024-05-13",
+    "link": "https://openai.com/"
+  },
+  {
     "model": "deepseek-coder-33b-instruct",
     "link": "https://huggingface.co/deepseek-ai/deepseek-coder-33b-instruct",
     "size": 33

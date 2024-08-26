@@ -3,6 +3,12 @@
     {
       "Context": "selective",
       "Method": "holistic",
+      "Model": "gpt-4o-2024-05-13",
+      "Pass_at_1": 1.0
+    },
+    {
+      "Context": "selective",
+      "Method": "holistic",
       "Model": "deepseek-coder-6.7b-instruct",
       "Pass_at_1": 0.9378571429
     },
@@ -149,6 +155,12 @@
     {
       "Context": "selective",
       "Method": "holistic",
+      "Model": "gpt-4o-2024-05-13",
+      "Pass_at_1": 0.6607142857
+    },
+    {
+      "Context": "selective",
+      "Method": "holistic",
       "Model": "WizardCoder-15B-V1.0",
       "Pass_at_1": 0.58
     },
@@ -184,6 +196,12 @@
     }
   ],
   "compilation_test_wise": [
+    {
+      "Context": "selective",
+      "Method": "holistic",
+      "Model": "gpt-4o-2024-05-13",
+      "Pass_at_1": 0.5035714286
+    },
     {
       "Context": "selective",
       "Method": "holistic",
@@ -333,6 +351,12 @@
     {
       "Context": "selective",
       "Method": "holistic",
+      "Model": "gpt-4o-2024-05-13",
+      "Pass_at_1": 0.6545897285
+    },
+    {
+      "Context": "selective",
+      "Method": "holistic",
       "Model": "WizardCoder-15B-V1.0",
       "Pass_at_1": 0.5674101922
     },
@@ -368,6 +392,12 @@
     }
   ],
   "pass_test_wise": [
+    {
+      "Context": "selective",
+      "Method": "holistic",
+      "Model": "gpt-4o-2024-05-13",
+      "Pass_at_1": 0.3438179726
+    },
     {
       "Context": "selective",
       "Method": "holistic",
