@@ -153,12 +153,53 @@
                 <th>#</th>
                 <th>Model</th>
                 <th data-metric></th>
-                <th>Dialect Matching</th>
-                <th>Exact Matching</th>
-                <th>Execution Accuracy</th>
+                <th>DM</th>
+                <th>EM</th>
+                <th>EX</th>
               </tr>
             </thead>
-            <tbody></tbody>
+            <tbody>
+              <tr>
+                <th>1</th>
+                <th>gpt-3.5-turbo</th>
+                <th data-metric></th>
+                <th>0.43</th>
+                <th>0.12</th>
+                <th>0.64</th>
+              </tr>
+              <tr>
+                <th>2</th>
+                <th>deepseek-coder-6.7b-instruct</th>
+                <th data-metric></th>
+                <th>0.25</th>
+                <th>0.06</th>
+                <th>0.39</th>
+              </tr>
+              <tr>
+                <th>3</th>
+                <th>codellama-7b-instruct</th>
+                <th data-metric></th>
+                <th>0.24</th>
+                <th>0.06</th>
+                <th>0.23</th>
+              </tr>
+              <tr>
+                <th>4</th>
+                <th>sqlcoder-7b</th>
+                <th data-metric></th>
+                <th>0.13</th>
+                <th>0.01</th>
+                <th>0.16</th>
+              </tr>
+              <tr>
+                <th>5</th>
+                <th>deepseek-r1-8b-llama-distill-q8_0</th>
+                <th data-metric></th>
+                <th>0.24</th>
+                <th>0.01</th>
+                <th>0.15</th>
+              </tr>
+            </tbody>
           </table>
         </div>
         <div class="container-fluid d-flex flex-column align-items-center">
@@ -172,15 +213,68 @@
                 <th>#</th>
                 <th>Model</th>
                 <th data-metric></th>
-                <th>Dialect Matching</th>
-                <th>Exact Matching</th>
-                <th>Execution Accuracy</th>
+                <th>DM</th>
+                <th>EM</th>
+                <th>EX</th>
               </tr>
             </thead>
-            <tbody></tbody>
+            <tbody>
+              <tr>
+                <th>1</th>
+                <th>gpt-3.5-turbo</th>
+                <th data-metric></th>
+                <th>0.57</th>
+                <th>0.09</th>
+                <th>0.56</th>
+              </tr>
+              <tr>
+                <th>2</th>
+                <th>deepseek-coder-6.7b-instruct</th>
+                <th data-metric></th>
+                <th>0.27</th>
+                <th>0.07</th>
+                <th>0.26</th>
+              </tr>
+              <tr>
+                <th>3</th>
+                <th>deepseek-r1-8b-llama-distill-q8_0</th>
+                <th data-metric></th>
+                <th>0.29</th>
+                <th>0.09</th>
+                <th>0.17</th>
+              </tr>
+              <tr>
+                <th>4</th>
+                <th>codellama-7b-instruct</th>
+                <th data-metric></th>
+                <th>0.21</th>
+                <th>0.04</th>
+                <th>0.14</th>
+              </tr>
+              <tr>
+                <th>5</th>
+                <th>sqlcoder-7b</th>
+                <th data-metric></th>
+                <th>0.16</th>
+                <th>0.01</th>
+                <th>0.08</th>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>
+      <!-- DM/EM/EX Explanation Start -->
+      <div class="container-fluid mb-4">
+        <h3 class="fw-bold text-center fw-light" style="font-size: 1.6em;">
+          Evaluation Metrics
+        </h3>
+        <ul>
+          <li><b>Dialect Matching (DM):</b> Measures how accurately the model translates dialect-specific SQL features from the source dialect to the target dialect.</li>
+          <li><b>Exact Matching (EM):</b> Measures the percentage of predictions where the generated SQL statement exactly matches the ground truth statement.</li>
+          <li><b>Execution Accuracy (EX):</b> Measures the proportion of cases where the execution results of the predicted and ground-truth SQL statements are identical.</li>
+        </ul>
+      </div>
+      <!-- DM/EM/EX Explanation End -->
       <!-- <div id="notes">
         <h3>📝 Submission</h3>
         <div class="inline-block mt-3">
